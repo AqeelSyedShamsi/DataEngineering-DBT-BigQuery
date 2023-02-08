@@ -1,0 +1,189 @@
+version: 2
+
+sources: 
+  - name: bigquery_nt_fb
+    database: venturebeyond-datawarehouse
+    schema: nakedandthriving_fbads
+    tables: 
+      - name: ad_image_history
+      - name: ad_video_history
+      - name: ad_conversion
+      - name: ad_history
+      - name: creative_history 
+      - name: ads_breakdown
+      - name: ads_breakdown_action_values
+      - name: ads_breakdown_actions
+      - name: ads_breakdown_outbound_clicks
+      - name: ads_breakdown_outbound_clicks_ctr
+      - name: ads_breakdown_unique_outbound_clicks
+      - name: ads_breakdown_unique_outbound_clicks_ctr
+      - name: ads_breakdown_website_ctr
+      - name: ads_breakdown_website_purchase_roas
+      - name: ads_breakdown_cost_per_action_type
+      - name: ads_breakdown_cost_per_conversion
+      - name: ads_breakdown_cost_per_outbound_click
+      - name: ads_breakdown_cost_per_unique_action_type
+      - name: ads_breakdown_cost_per_unique_outbound_click
+      - name: ads_breakdown_cost_per_thruplay
+      - name: ads_breakdown_video_play_actions
+      - name: ads_breakdown_video_continuous_2_sec_watched_actions
+      - name: ads_breakdown_video_thruplay_watched_actions
+      - name: ads_breakdown_video_30_sec_watched_actions
+      - name: ads_breakdown_video_avg_time_watched_actions
+      - name: ads_breakdown_video_p_25_watched_actions
+      - name: ads_breakdown_video_p_50_watched_actions
+      - name: ads_breakdown_video_p_75_watched_actions
+      - name: ads_breakdown_video_p_95_watched_actions
+      - name: ads_breakdown_video_p_100_watched_actions
+      - name: ads_breakdown_video_play_curve_actions
+      - name: country_breakdown
+      - name: country_breakdown_action_values
+      - name: country_breakdown_actions
+      - name: country_breakdown_outbound_clicks
+      - name: country_breakdown_outbound_clicks_ctr
+      - name: country_breakdown_unique_outbound_clicks
+      - name: country_breakdown_unique_outbound_clicks_ctr
+      - name: country_breakdown_website_ctr
+      - name: country_breakdown_website_purchase_roas
+      - name: country_breakdown_cost_per_action_type
+      - name: country_breakdown_cost_per_conversion
+      - name: country_breakdown_cost_per_outbound_click
+      - name: country_breakdown_cost_per_unique_action_type
+      - name: country_breakdown_cost_per_unique_outbound_click
+      - name: country_breakdown_cost_per_thruplay
+      - name: country_breakdown_video_play_actions
+      - name: country_breakdown_video_continuous_2_sec_watched_actions
+      - name: country_breakdown_video_thruplay_watched_actions
+      - name: country_breakdown_video_30_sec_watched_actions
+      - name: country_breakdown_video_avg_time_watched_actions
+      - name: country_breakdown_video_p_25_watched_actions
+      - name: country_breakdown_video_p_50_watched_actions
+      - name: country_breakdown_video_p_75_watched_actions
+      - name: country_breakdown_video_p_95_watched_actions
+      - name: country_breakdown_video_p_100_watched_actions
+      - name: country_breakdown_video_play_curve_actions
+      - name: age_breakdown
+      - name: age_breakdown_action_values
+      - name: age_breakdown_actions
+      - name: age_breakdown_outbound_clicks
+      - name: age_breakdown_outbound_clicks_ctr
+      - name: age_breakdown_unique_outbound_clicks
+      - name: age_breakdown_unique_outbound_clicks_ctr
+      - name: age_breakdown_website_ctr
+      - name: age_breakdown_website_purchase_roas
+      - name: age_breakdown_cost_per_action_type
+      - name: age_breakdown_cost_per_conversion
+      - name: age_breakdown_cost_per_outbound_click
+      - name: age_breakdown_cost_per_unique_action_type
+      - name: age_breakdown_cost_per_unique_outbound_click
+      - name: age_breakdown_cost_per_thruplay
+      - name: age_breakdown_video_play_actions
+      - name: age_breakdown_video_continuous_2_sec_watched_actions
+      - name: age_breakdown_video_thruplay_watched_actions
+      - name: age_breakdown_video_30_sec_watched_actions
+      - name: age_breakdown_video_avg_time_watched_actions
+      - name: age_breakdown_video_p_25_watched_actions
+      - name: age_breakdown_video_p_50_watched_actions
+      - name: age_breakdown_video_p_75_watched_actions
+      - name: age_breakdown_video_p_95_watched_actions
+      - name: age_breakdown_video_p_100_watched_actions
+      - name: age_breakdown_video_play_curve_actions
+      - name: device_breakdown
+      - name: device_breakdown_action_values
+      - name: device_breakdown_actions
+      - name: device_breakdown_outbound_clicks
+      - name: device_breakdown_outbound_clicks_ctr
+      - name: device_breakdown_unique_outbound_clicks
+      - name: device_breakdown_unique_outbound_clicks_ctr
+      - name: device_breakdown_website_ctr
+      - name: device_breakdown_website_purchase_roas
+      - name: device_breakdown_cost_per_action_type
+      - name: device_breakdown_cost_per_conversion
+      - name: device_breakdown_cost_per_outbound_click
+      - name: device_breakdown_cost_per_unique_action_type
+      - name: device_breakdown_cost_per_unique_outbound_click
+      - name: device_breakdown_cost_per_thruplay
+      - name: device_breakdown_video_play_actions
+      - name: device_breakdown_video_continuous_2_sec_watched_actions
+      - name: device_breakdown_video_thruplay_watched_actions
+      - name: device_breakdown_video_30_sec_watched_actions
+      - name: device_breakdown_video_avg_time_watched_actions
+      - name: device_breakdown_video_p_25_watched_actions
+      - name: device_breakdown_video_p_50_watched_actions
+      - name: device_breakdown_video_p_75_watched_actions
+      - name: device_breakdown_video_p_95_watched_actions
+      - name: device_breakdown_video_p_100_watched_actions
+      - name: device_breakdown_video_play_curve_actions
+      - name: gender_breakdown
+      - name: gender_breakdown_action_values
+      - name: gender_breakdown_actions
+      - name: gender_breakdown_outbound_clicks
+      - name: gender_breakdown_outbound_clicks_ctr
+      - name: gender_breakdown_unique_outbound_clicks
+      - name: gender_breakdown_unique_outbound_clicks_ctr
+      - name: gender_breakdown_website_ctr
+      - name: gender_breakdown_website_purchase_roas
+      - name: gender_breakdown_cost_per_action_type
+      - name: gender_breakdown_cost_per_conversion
+      - name: gender_breakdown_cost_per_outbound_click
+      - name: gender_breakdown_cost_per_unique_action_type
+      - name: gender_breakdown_cost_per_unique_outbound_click
+      - name: gender_breakdown_cost_per_thruplay
+      - name: gender_breakdown_video_play_actions
+      - name: gender_breakdown_video_continuous_2_sec_watched_actions
+      - name: gender_breakdown_video_thruplay_watched_actions
+      - name: gender_breakdown_video_30_sec_watched_actions
+      - name: gender_breakdown_video_avg_time_watched_actions
+      - name: gender_breakdown_video_p_25_watched_actions
+      - name: gender_breakdown_video_p_50_watched_actions
+      - name: gender_breakdown_video_p_75_watched_actions
+      - name: gender_breakdown_video_p_95_watched_actions
+      - name: gender_breakdown_video_p_100_watched_actions
+      - name: gender_breakdown_video_play_curve_actions
+      
+  - name: bigquery_nt_ga
+    database: venturebeyond-datawarehouse
+    schema: nakedandthriving_googleanalytics
+    tables: 
+      - name: performance_breakdown
+
+  - name: bigquery_nt_gads
+    database: venturebeyond-datawarehouse
+    schema: nakedandthriving_googleads
+    tables: 
+      - name: ad_stats
+      - name: campaign_stats
+
+  - name: naked_and_thriving_fb_ads
+    database: venturebeyond-datawarehouse
+    schema: ft_nakedandthriving_fbads
+    tables:
+    - name: basic_ad
+    - name: basic_ad_actions
+    - name: ad_history
+    - name: creative_history
+    - name: ad_conversion
+    - name: campaign_history
+    - name: customised
+    - name: customised_actions
+    - name: customised_action_values
+    - name: customised_outbound_clicks
+
+  - name: naked_and_thriving_google_ads
+    database: venturebeyond-datawarehouse
+    schema: ft_nakedandthriving_googleads
+    tables: 
+      - name: ad_stats
+      - name: campaign_stats
+
+  - name: naked_and_thriving_google_analytics
+    database: venturebeyond-datawarehouse
+    schema: ft_nakedandthriving_googleanalytics
+    tables: 
+      - name: adwords_campaigns
+      - name: social_media_acquisitions
+      - name: utm_data
+      - name: campaign_performance
+    
+  
+      
